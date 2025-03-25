@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion as M, AnimatePresence } from 'framer-motion';
 import ScrollProgressBar from './Components/ScrollProgressBar';
-import Header from './components/Header';
-import About from './components/About';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
+import Header from './Components/Header';
+import About from './Components/About';
+import Skills from './Components/Skills';
+import Experience from './Components/Experience';
+import Projects from './Components/Projects';
 import Achievements from './Components/Achievements';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';

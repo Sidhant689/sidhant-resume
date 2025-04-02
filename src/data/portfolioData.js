@@ -42,19 +42,35 @@ import { FaReact, FaNodeJs, FaDocker, FaGithub, FaLinkedin } from 'react-icons/f
         name: 'Project Monitoring System',
         description: 'Comprehensive web application for tracking organizational targets',
         technologies: ['ASP.NET Core', 'Bootstrap', 'PostgreSQL'],
-        period: 'Nov 2022 – Apr 2023'
+        period: 'Nov 2022 – Apr 2023',
+        url: ''
       },
       {
         name: 'Flood Monitoring Web Application',
         description: 'Real-time flood monitoring platform with advanced reporting',
         technologies: ['ASP.NET MVC', 'PostgreSQL', 'RESTful APIs'],
-        period: 'May 2023 – Oct 2023'
+        period: 'May 2023 – Oct 2023',
+        url: ''
+      },
+      {
+        name: 'AQI',
+        description: 'Web application for monitoring air quality index',
+        technologies: ['React.js', 'Tailwind CSS'],
+        period: 'Jan 2024',
+        url: ''
+      },
+      {
+        name: 'Weather UV Index',
+        description: 'Web application for monitoring UV index',
+        technologies: ['React.js', 'Tailwind CSS'],
+        period: 'Jan 2024',
+        url: ''
       }
     ],
     achievements: [
       'Implemented robust authentication system',
       'Optimized database queries reducing response time by 20%',
-      'Led cross-functional team in successful feature development'
+      'Led cross-functional team in successful feature development',
     ]
   };
 

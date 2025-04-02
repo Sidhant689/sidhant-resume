@@ -6,6 +6,7 @@ import { FaReact, FaNodeJs, FaDocker, FaGithub, FaLinkedin } from 'react-icons/f
     title: 'Full Stack Developer',
     email: 'biswalsidhant.spb@gmail.com',
     phone: '+91 7064119508',
+    whatsapp: '+91 7077271732',
     location: 'Bengaluru, India',
     socialLinks: [
       { 

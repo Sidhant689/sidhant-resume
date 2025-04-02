@@ -11,7 +11,7 @@ import { FaReact, FaNodeJs, FaDocker, FaGithub, FaLinkedin } from 'react-icons/f
     socialLinks: [
       { 
         icon: FaLinkedin, 
-        url: 'https://linkedin.com/in/sidhant-priyadarshan-biswal' 
+        url: 'https://www.linkedin.com/in/sidhant-priyadarshan-biswal-6423091b4/' 
       },
       { 
         icon: FaGithub, 

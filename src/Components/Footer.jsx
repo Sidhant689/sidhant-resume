@@ -53,6 +53,19 @@ const Footer = () => {
           © {new Date().getFullYear()} {portfolioData.name}. All Rights Reserved.
         </M.p>
       </div>
+
+      {/* Animated Wave SVG at the top */}
+      <M.div 
+        className="absolute top-0 left-0 w-full overflow-hidden leading-none"
+        initial={{ y: -10 }}
+        //animate={{ y: [-10, 10, -10] }}
+        //transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+        whileHover={{ y: 5 }}
+      >
+        <svg viewBox="0 0 1200 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,64L48,74.7C96,85,192,107,288,106.7C384,107,480,85,576,85.3C672,85,768,107,864,122.7C960,139,1056,149,1152,133.3C1248,117,1344,75,1392,53.3L1440,32L1440,0L0,0Z" fill="white" />
+        </svg>
+      </M.div>
     </M.footer>
   );
 };

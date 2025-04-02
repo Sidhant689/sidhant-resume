@@ -35,7 +35,6 @@ const Header = () => {
             transition={{ type: "spring", stiffness: 100, damping: 15, delay: 0.3 }}
             className="mb-8 p-1 rounded-full bg-white bg-opacity-20 backdrop-blur-sm"
           >
-            {/* Here you could add a profile image if you want */}
             <div className="w-32 h-32 rounded-full bg-white text-primary text-6xl flex items-center justify-center font-bold">
               {portfolioData.name.charAt(0)}
             </div>
@@ -44,12 +43,7 @@ const Header = () => {
           <M.h1 
             initial={{ scale: 0.5, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ 
-              type: "spring", 
-              stiffness: 100, 
-              damping: 15,
-              delay: 0.5 
-            }}
+            transition={{ type: "spring", stiffness: 100, damping: 15, delay: 0.5 }}
             className="text-5xl font-bold mb-4 text-center"
           >
             {portfolioData.name}
@@ -94,7 +88,6 @@ const Header = () => {
             whileTap={{ scale: 0.95 }}
             className="mt-10 bg-white text-primary hover:text-secondary font-medium px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             onClick={() => {
-              // Scroll to contact section
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
@@ -102,6 +95,19 @@ const Header = () => {
           </M.button>
         </M.div>
       </div>
+
+      {/* Animated Wave SVG at the bottom */}
+      <M.div 
+        className="absolute bottom-0 left-0 w-full overflow-hidden leading-none"
+        //initial={{ y: 10 }}
+        //animate={{ y: [10, -10, 10] }}
+        //transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
+        whileHover={{ y: -5 }}
+      >
+        <svg viewBox="0 0 1200 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,192L48,186.7C96,181,192,171,288,154.7C384,139,480,117,576,133.3C672,149,768,203,864,213.3C960,224,1056,192,1152,176C1248,160,1344,160,1392,160L1440,160L1440,250L0,250Z" fill="white" />
+        </svg>
+      </M.div>
     </M.header>
   );
 };
